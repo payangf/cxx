@@ -1,6 +1,6 @@
-// class template array -*- C++ -*-
+// TR1 ctype.h -*- C++ -*-
 
-// Copyright (C) 2004, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
+// Copyright (C) 2006, 2009 Free Software Foundation, Inc.
 //
 // This file is part of the GNU ISO C++ Library.  This library is free
 // software; you can redistribute it and/or modify it under the
@@ -22,33 +22,13 @@
 // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 // <http://www.gnu.org/licenses/>.
 
-/** @file tr1/array
+/** @file tr1/ctype.h
  *  This is a TR1 C++ Library header. 
  */
 
-#ifndef _GLIBCXX_TR1_ARRAY
-#define _GLIBCXX_TR1_ARRAY 1
+#ifndef _TR1_CTYPE_H
+#define _TR1_CTYPE_H 1
 
-#pragma GCC system_header
+#include <tr1/cctype>
 
-#if defined(_GLIBCXX_INCLUDE_AS_CXX0X)
-#  error TR1 header cannot be included from C++0x header
 #endif
-
-#include <bits/stl_algobase.h>
-
-#if defined(_GLIBCXX_INCLUDE_AS_TR1)
-#  include <tr1_impl/array>
-#else
-#  define _GLIBCXX_INCLUDE_AS_TR1
-#  define _GLIBCXX_BEGIN_NAMESPACE_TR1 namespace tr1 {
-#  define _GLIBCXX_END_NAMESPACE_TR1 }
-#  define _GLIBCXX_TR1 tr1::
-#  include <tr1_impl/array>
-#  undef _GLIBCXX_TR1
-#  undef _GLIBCXX_END_NAMESPACE_TR1
-#  undef _GLIBCXX_BEGIN_NAMESPACE_TR1
-#  undef _GLIBCXX_INCLUDE_AS_TR1
-#endif
-
-#endif // _GLIBCXX_TR1_ARRAY

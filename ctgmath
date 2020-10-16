@@ -1,6 +1,6 @@
-// <ctgmath> -*- C++ -*-
+// TR1 ctgmath -*- C++ -*-
 
-// Copyright (C) 2007, 2009 Free Software Foundation, Inc.
+// Copyright (C) 2006, 2007, 2009 Free Software Foundation, Inc.
 //
 // This file is part of the GNU ISO C++ Library.  This library is free
 // software; you can redistribute it and/or modify it under the
@@ -22,20 +22,13 @@
 // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 // <http://www.gnu.org/licenses/>.
 
-/** @file include/ctgmath
- *  This is a Standard C++ Library header.
+/** @file tr1/ctgmath
+ *  This is a TR1 C++ Library header. 
  */
 
-#pragma GCC system_header
+#ifndef _GLIBCXX_TR1_CTGMATH
+#define _GLIBCXX_TR1_CTGMATH 1
 
-#ifndef _GLIBCXX_CTGMATH
-#define _GLIBCXX_CTGMATH 1
+#include <tr1/cmath>
 
-#ifndef __GXX_EXPERIMENTAL_CXX0X__
-#  include <c++0x_warning.h>
-#else
-#  include <cmath>
-#endif
-
-#endif 
-
+#endif // _GLIBCXX_TR1_CTGMATH
