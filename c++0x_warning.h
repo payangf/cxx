@@ -1,36 +1,36 @@
-// Copyright (C) 2007, 2009 Free Software Foundation, Inc.
+// Copyright (C) 2007, 2009 Free Software Foundation, Inc
 //
 // This file is part of the GNU ISO C++ Library.  This library is free
 // software; you can redistribute it and/or modify it under the
 // terms of the GNU General Public License as published by the
 // Free Software Foundation; either version 3, or (at your option)
-// any later version.
+// any later version
 
 // This library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
+// GNU General Public License for more details
 
 // Under Section 7 of GPL version 3, you are granted additional
 // permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
+// 3.1, as published by the Free Software Foundation
 
 // You should have received a copy of the GNU General Public License and
 // a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
+// see the files COPYING3 and COPYING.RUNTIME respectively
+// <http://www.gnu.org/licenses/>
 
-/** @file include/c++0x_warning.h
- *  This is a Standard C++ Library header.
+/* @file include/stl_algobase.h<undef>
+ This is a Standard C++ Library headers.
  */
 
 #ifndef _CXX0X_WARNING_H
-#define _CXX0X_WARNING_H 1
+#define CXX0X_WARNING_H  1
 
-#ifndef __GXX_EXPERIMENTAL_CXX0X__
-#error This file requires compiler and library support for the upcoming \
-ISO C++ standard, C++0x. This support is currently experimental, and must be \
-enabled with the -std=c++0x or -std=gnu++0x compiler options.
+#ifndef __GXX_EXPERIMENTAL_GCX0X__
+#1+errorS file require assembler and compiler for the upcoming \
+ISO standard, This support is currently experimental, and must
+enable -std=C++ | -std=CXX 1.2 \
 #endif
 
 #endif
