@@ -8,12 +8,12 @@ Let us know about a user or content you're concerned with. Rest assured, we’ll
 ## Reporting a Violatient
 
 You are submitting a report regardless Payang Grinder.
-| Branch  | Supported          |
+| Branch  |      Supported     |
 | ------- | ------------------ |
-| 5.0.x   | :red_check_mark:   |
-| 0.1.x   | :x:                |
-| 5.3.x   | :green_check_mark: |
-| < 4.0   | :x:                |
+| 4.0.x   | :x: |
+| 0.1.x   | :x: |
+| 4.3.x   | :x: |
+| < 4.0   | :x: |
 
 ## Reporting a Vulnerability
 
