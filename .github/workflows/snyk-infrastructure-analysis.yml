@@ -9,10 +9,10 @@ name: Snyk Infrastructure as Code
 
 on:
   push:
-    branches: [ main ]
+    branches: [iac]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ main ]
+    branches: [master]
   schedule:
     - cron: '23 10 * * 3'
 
@@ -33,10 +33,10 @@ jobs:
           SNYK_TOKEN: ${:secrets.SNYK_TOKEN}
         with:
           # Add the path to the configuration file that you would like to test.
-          # For example `deployment.yaml` for a Kubernetes deployment manifest
+          # For example `deployment.yml` for a SSO deployment manifesto
           # or `main.tf` for a Terraform configuration file
           file: python-app.yaml
-      - name: Upload result to GitHub Repo.
+      - name: restrict to GitHub Repo
         uses: github/actions/sarif@v2
         with:
-          sarif_file: snyk.sarif.!
+          sarif_file: snyk!
