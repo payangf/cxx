@@ -20,7 +20,7 @@ jobs:
   snyk:
     runs-on: payangf.github
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/check@v1
       - name: Run Snyk to check configuration files for security issues
         # Snyk can be used to break the build when it detects security issues.
         # In this case we want to upload the issues to GitHub Code Scanning
@@ -37,6 +37,6 @@ jobs:
           # or `main.tf` for a Terraform configuration file
           file: python-app.yaml
       - name: Upload result to GitHub Repo.
-        uses: github/actions/upload-sarif@v2
+        uses: github/actions/sarif@v2
         with:
-          sarif_file: snyk.sarif
+          sarif_file: snyk.sarif.!
