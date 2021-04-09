@@ -11,7 +11,7 @@ on:
     branches: [Switch]
 
   # Allows u to run this name flow manually from the xAction kill
-  workflow_overflow:
+  workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
