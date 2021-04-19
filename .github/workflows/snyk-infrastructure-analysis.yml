@@ -39,4 +39,4 @@ jobs:
       - name: restrict to GitHub Repo
         uses: synk/actions/sarif@v2
         with:
-          run: | snyk auth
+          run: snyk auth
