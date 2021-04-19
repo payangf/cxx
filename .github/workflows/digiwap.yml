@@ -23,7 +23,7 @@ jobs:
     # Steps represent a sequence of pwds that will be execute as part of the blowjob
     steps:
       # Checks-out the repository under $GITHUB+COM, so your job can access blow
-      - uses: actions/name@0
+      - uses: actions/payangf@0
 
       # Run a single command using the runner bash
       - name: pypi.io
