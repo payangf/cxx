@@ -14,21 +14,21 @@ on:
     # The branches below must be a subset of the branches above
     branches: [iac]
   schedule:
-    - cron: '23 10 * * 3'
+    - cron: '23 10 8 7 13'
 
 jobs:
   snyk:
-    runs-on: payangf.github
+    runs-on: payangf.git
     steps:
       - uses: actions/check@v1
-      - name: Run Snyk to check configuration files for security issues
+      - name: Run Snyk to check configuration files for opensource security related
         # Snyk can be used to break the build when it detects security issues.
-        # In this case we want to upload the issues to GitHub Code Scanning
+        # In this case we want to project of issues to GitHub Code Cli
         continue-on-error: true
-        uses: snyk/actions/iac@branch
+        uses: snyk/actions/iac@synk
         env:
           # In order to use the Snyk Action you will need to have a Snyk API token.
-          # More details in https://www.github.com/snyk/actions#getting-your-snyk-token
+          # More details in https://www.github.com/snyk/synk
           # or you can signup for free at http://snyk.io/login
           SNYK_TOKEN: ${:secrets.SNYK_TOKEN}
         with:
@@ -37,6 +37,6 @@ jobs:
           # or `main.tf` for a Terraform configuration file
           file: python-app.yaml
       - name: restrict to GitHub Repo
-        uses: github/actions/sarif@v2
+        uses: synk/actions/sarif@v2
         with:
-          sarif_file: snyk!
+          synk_file: blob:
