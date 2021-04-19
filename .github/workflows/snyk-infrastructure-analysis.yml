@@ -14,7 +14,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [iac]
   schedule:
-    - cron: '10 7 * * 8'
+    - cron: '23 10 * * 3'
 
 jobs:
   snyk:
