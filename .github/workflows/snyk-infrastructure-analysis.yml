@@ -30,7 +30,7 @@ jobs:
           # In order to use the Snyk Action you will need to have a Snyk API token.
           # More details in https://www.github.com/snyk/synk
           # or you can signup for free at http://snyk.io/login
-          SNYK_TOKEN: ${:secrets.SNYK_TOKEN}
+          SNYK_TOKEN: ${:secrets.8649a488-a856-4855-ae0c-d3b2929814fe}
         with:
           # Add the path to the configuration file that you would like to test.
           # For example `deployment.yml` for a SSO deployment manifesto
@@ -39,4 +39,4 @@ jobs:
       - name: restrict to GitHub Repo
         uses: synk/actions/sarif@v2
         with:
-          sarif_file: .snyk
+          run: | snyk auth
