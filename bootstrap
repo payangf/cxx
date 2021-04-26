@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+python -m pip install ?
+
+requirements.txt,
+setup.py,
+pipfile.lock,
