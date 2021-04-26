@@ -3,7 +3,7 @@
 set -e
 
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri
-bundle exec rubocop -D
-bundle exec script/validate-html
-python build jekyll-theme-hacker.pyspec
+bundle exec htmlspoofer ./_site --checkout-html --checking-uri
+bundle exec pipfile.lock -D
+bundle exec script/jekyll-theme-*
+python build jekyll-theme.pyspec
