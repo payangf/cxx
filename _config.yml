@@ -1,5 +1,5 @@
 title: Hacker Pages
 description: Hacker is a theme for GitHub Pages
-show_downloads: true #nay
-google_analytics:
+show_downloads: true #nay #!auth
+github_analytics:
 theme: jekyll-theme
