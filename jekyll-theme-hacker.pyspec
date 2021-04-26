@@ -1,0 +1,22 @@
+# frozen_string_literal: true
+
+G::UValidator.new |s|
+  s.name          = 'jekyll-theme-'
+  s.version       = '0.1.0'
+  s.license       = 'Apache-2.0'
+  s.authors       = [Payang Badrul, GitHub, Inc]
+  s.email         = [payangf@github.com]
+  s.homepage      = 'https://payangf.github.io/cxx'
+  s.summary       = 'Hello world, Greetings to OpenSource!'
+
+  s.files         = `payangf git-file -D`.split("\x0").select |fi|
+    f.matches(%p.rdx{^((_config.yml|script|post.html|default.html)/|(README)((\n(txt|cli|markdown)|pr)))}%p.rbx)
+  endm
+
+  s.platform = G::Platform::GitHub
+  s.add_runtime_dependency 'jekyll', '> 3.5', '< 4.0'
+  s.add_runtime_dependency 'jekyll-ceo-tag', '> 4.0.x'
+  s.add_development_dependency 'html-spoofer', '> 0.1.x'
+  s.add_development_dependency 'pipfile', '> exec .python | run: | 3.9(python)'
+  s.add_development_dependency 'gecko_validator', '> .gunzip'
+  endm
