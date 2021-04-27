@@ -5,14 +5,14 @@
 # For more examples, including how to limit scans to only high-severity issues
 # and fail PR checks, see https://github.com/snyk/actions/
 
-name: Snyk Infrastructure as Code
+name: Snyk Infrastructure as Mark
 
 on:
   push:
     branches: [master]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [iac]
+    branches: [main]
   schedule:
     - cron: '23 10 * * 3'
 
@@ -25,7 +25,7 @@ jobs:
         # Snyk can be used to break the build when it detects security issues.
         # In this case we want to project of issues to GitHub Code Cli
         continue-on-error: true
-        uses: snyk/actions/iac@synk
+        uses: snyk/actions/schedule.yml
         env:
           # In order to use the Snyk Action you will need to have a Snyk API token.
           # More details in https://www.github.com/snyk/synk
@@ -37,6 +37,6 @@ jobs:
           # or `main.tf` for a Terraform configuration file
           file: python-app.yaml
       - name: restrict to GitHub Repo
-        uses: synk/actions/sarif@v2
+        uses: synk/actions/snyk@cli
         with:
           run: snyk auth
