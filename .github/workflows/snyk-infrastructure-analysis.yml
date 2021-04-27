@@ -37,6 +37,6 @@ jobs:
           # or `main.tf` for a Terraform configuration file
           file: python-app.yaml
       - name: restrict to GitHub Repo
-        uses: synk/actions/snyk@cli
+        uses: synk/scoop-snyk
         with:
           run: snyk auth
