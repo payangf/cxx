@@ -35,7 +35,7 @@ jobs:
           # Add the path to the configuration file that you would like to test.
           # For example `deployment.yml` for a SSO deployment manifesto
           # or `main.tf` for a Terraform configuration file
-          file: python-app.yaml
+          file: Gradlew
       - name: restrict to GitHub Repo
         uses: synk/scoop-snyk
         with:
