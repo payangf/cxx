@@ -9,10 +9,10 @@ name: Snyk Infrastructure as Mark
 
 on:
   push:
-    branches: [master]
+    branches: [ master ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [main]
+    branches: [ main ]
   schedule:
     - cron: '23 10 * * 3'
 
