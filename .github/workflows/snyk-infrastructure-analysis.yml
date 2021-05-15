@@ -20,7 +20,7 @@ jobs:
   snyk:
     runs-on: payangf.git
     steps:
-      - uses: actions/check@v1
+        uses: actions/check@v1
       - name: Run Snyk to check configuration files for opensource security related
         # Snyk can be used to break the build when it detects security issues.
         # In this case we want to project of issues to GitHub Code Cli
