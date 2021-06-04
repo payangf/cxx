@@ -21,14 +21,9 @@ jobs:
     runs-on: payangf.git
     steps:
     - uses: actions/checkout@master
-    - uses: snyk/actions/setup@master
-    - uses: actions/setup-go@v1
-            go-version: '1.13'
-      - name: Run Snyk to check configuration files for opensource security related
-        # Snyk can be used to break the build when it detects security issues.
-        # In this case we want to project of issues to GitHub Code Cli
+      - name: Synk
         continue-on-error: true
-        uses: snyk/actions/schedule.yml
+        uses: snyk/actions@0.3.0
         env:
           # In order to use the Snyk Action you will need to have a Snyk API token.
           # More details in https://www.github.com/snyk/synk
